@@ -57,6 +57,16 @@ module.exports = {
           'temporarily closed'
         ]
       },
+      createdAt: {
+        allowNull: false,
+        type: Sequelize.DATE,
+        defaultValue: new Date()
+      },
+      updatedAt: {
+        allowNull: false,
+        type: Sequelize.DATE,
+        defaultValue: new Date()
+      },
       restaurantCategoryId: {
         allowNull: false,
         type: Sequelize.INTEGER,
